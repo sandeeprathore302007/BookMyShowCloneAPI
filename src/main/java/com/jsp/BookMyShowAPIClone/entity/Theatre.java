@@ -33,7 +33,7 @@ public class Theatre {
     @ManyToOne
     private Owner owner;
     @OneToMany
-    private List<Show> shows;
+    private List<MovieShow> movieShows;
     
 	
 

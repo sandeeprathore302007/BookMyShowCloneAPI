@@ -1,10 +1,9 @@
 package com.jsp.BookMyShowAPIClone.dto;
 
-import java.util.List;
-
-import javax.persistence.OneToMany;
-
-import com.jsp.BookMyShowAPIClone.entity.Seat;
+ 
+import com.jsp.BookMyShowAPIClone.enums.ScreenAvailability;
+import com.jsp.BookMyShowAPIClone.enums.ScreenStatus;
+import com.jsp.BookMyShowAPIClone.enums.ScreenType;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,10 +14,14 @@ public class ScreenDto {
 	private long screenId;
 	private String screenName;
 	// screen type
+	private ScreenType screenType;
+	
 	// screenAvailability
+	private ScreenAvailability availability;
+	
 	// screen status
-	@OneToMany
-	private List<Seat> seats;
+	private ScreenStatus screenStatus;
+	 
 	private int noOfClassicSeat;
 	private int noOfPlatinumSeat;
 	private int noOfGoldSeat;

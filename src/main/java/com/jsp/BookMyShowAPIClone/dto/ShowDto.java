@@ -16,6 +16,7 @@ public class ShowDto {
     private long movieId;
     private long movieName;
     //genre
+    private String genre;
     private LocalDateTime movieDuration;
     private String movieDescription;
     private String movieLanguage;

@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.jsp.BookMyShowAPIClone.enums.TicketStatus;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,8 +24,9 @@ public class Ticket {
 	private long ticketId;
 	private double ticketPrice;
 	// TicketStatus
+	private TicketStatus ticketStatus;
 	@ManyToOne
-	private Show show;
+	private MovieShow movieShow;
 	
 	@OneToMany
 	private List<Booking> bookings;

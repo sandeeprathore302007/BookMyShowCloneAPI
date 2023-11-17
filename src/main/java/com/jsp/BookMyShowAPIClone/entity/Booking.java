@@ -20,7 +20,9 @@ public class Booking {
 	private LocalDateTime bookingFromTime;
 	private LocalDateTime bookingTillTime;
 	private long seatId;
+	//SeatType
 	// bookingStatus
+	
 	private double seatPrice;
 	
 

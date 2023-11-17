@@ -10,6 +10,6 @@ public class CustomerDto {
 	private String customerName;
 	private long customerPhone;
 	private String customerEmail;
-	private String customerPassword;
+	 
 
 }

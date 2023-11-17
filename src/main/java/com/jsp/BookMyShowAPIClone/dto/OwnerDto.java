@@ -8,9 +8,9 @@ import lombok.Setter;
 public class OwnerDto {
 	private long ownerId;
 	private String ownerName;
-	private String ownerPhoneNumber;
+	private long ownerPhoneNumber;
 	private String ownerEmail;
-	private String ownerPassword;
+	 
 	
 
 }
