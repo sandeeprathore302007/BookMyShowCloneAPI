@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.jsp.BookMyShowAPIClone.Exception.OwnerIdNotFoundException;
 import com.jsp.BookMyShowAPIClone.dao.OwnerDao;
 import com.jsp.BookMyShowAPIClone.dto.OwnerDto;
 import com.jsp.BookMyShowAPIClone.entity.Owner;
@@ -51,7 +52,7 @@ public class OwnerService {
 
 		else {
 			// raise ownerIdNot found Exception
-			return null;
+			throw new OwnerIdNotFoundException("sorry failed to add owner");
 
 		}
 
@@ -78,7 +79,8 @@ public class OwnerService {
 
 		else {
 			// raise ownerIdNot found Exception
-			return null;
+			throw new OwnerIdNotFoundException("sorry failed to delete the owner");
+
 
 		}
 
